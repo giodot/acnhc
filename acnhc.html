@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>AC:NH Collectibles</title>
+	<meta name="description" content="">
+	<meta name="author" content="Animal Crossing: New Horizons Collectibles">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+	<style>
+	html,
+	body {
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	html {
+		font-family: Rubik;
+		font-size: 1.5em;
+	}
+
+	header h1 {
+		margin-top: 1%;
+	}
+
+	.text-center {
+		text-align:center;
+	}
+
+	.buttons {
+		margin-bottom: 1%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.container {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+
+	.title-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	body {
+		background-color: #2b2821;
+		color: #e3cfb4;
+	}
+
+	th {
+		text-align:left;
+	}
+
+	a {
+		text-decoration: none;
+		color: #e3cfb4;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header class="text-center">
+			<h1>Animal Crossing New: Horizons Collectibles</h1>
+			<div class="buttons">
+				<a href="javascript:void(0)" id="art">Art</a>
+				<a href="javascript:void(0)" id="bugs">Bugs</a>
+				<a href="javascript:void(0)" id="fish">Fish</a>
+				<a href="javascript:void(0)" id="fossils">Fossils</a>
+				<a href="javascript:void(0)" id="music">Music</a>
+				<a href="javascript:void(0)" id="reactions">Reactions</a>
+				<a href="javascript:void(0)" id="sea">Sea</a>
+			</div>
+			<div class="buttons">
+				<a href="javascript:void(0)" id="allMissingButton" onclick="toggleAllMissing()">All</a>
+				<a href="javascript:void(0)" id="allCurrentButton" onclick="toggleAllCurrent()">All</a>
+				<a href="javascript:void(0)" id="northernSouthernButton" onclick="toggleNorthernSouthern()">Northern</a>
+				<a href="javascript:void(0)" id="twelveTwentyFourButton" onclick="toggleTwelveTwentyFour()">12</a>
+			</div>
+		</header>
+
+		<main>
+			<div>
+				<table style="width:100%">
+					<div>
+						<div class="title-container"><img src="2_Bugs/00_Bug_Icon.png" alt="00_Bug_Icon" width="50" height="50"><h2>Bugs</h2></div>
+						<tr>
+							<th>Icon</th>
+							<th>Name</th>
+							<th>Month</th>
+							<th>Time</th>
+							<th>Price</th>
+							<th>Location</th>
+						</tr>
+					</div>
+					<tr>
+						<td><img src="2_Bugs/01_Common_Butterfly.png" alt="01_Common_Butterfly"></td>
+						<td>Common Butterfly</td>
+						<td>1 2 3 4 5 6 9 10 11 12</td>
+						<td>04-19</td>
+						<td>160</td>
+						<td>Flowers</td>
+					</tr>
+					<tr>
+						<td><img src="2_Bugs/02_Yellow_Butterfly.png" alt="02_Yellow_Butterfly"></td>
+						<td>Yellow Butterfly</td>
+						<td>3 4 5 6 9 10</td>
+						<td>04-19</td>
+						<td>160</td>
+						<td>Flowers</td>
+					</tr>
+				</table>
+			</div>
+		</main>
+	</div>
+
+	<script>
+		function toggleAllMissing() {
+			const allMissingButton = document.getElementById("allMissingButton");
+			if (allMissingButton.innerHTML === "All") {
+				allMissingButton.innerHTML = "Missing";
+			} else {
+				allMissingButton.innerHTML = "All";
+			}
+		}
+
+		function toggleAllCurrent() {
+			const allCurrentButton = document.getElementById("allCurrentButton");
+			if (allCurrentButton.innerHTML === "All") {
+				allCurrentButton.innerHTML = "Current";
+			} else {
+				allCurrentButton.innerHTML = "All";
+			}
+		}
+
+		function toggleNorthernSouthern() {
+			const northernSouthernButton = document.getElementById("northernSouthernButton");
+			if (northernSouthernButton.innerHTML === "Northern") {
+				northernSouthernButton.innerHTML = "Southern";
+			} else {
+				northernSouthernButton.innerHTML = "Northern";
+			}
+		}
+
+		function toggleTwelveTwentyFour() {
+			const twelveTwentyFourButton = document.getElementById("twelveTwentyFourButton");
+			if (twelveTwentyFourButton.innerHTML === "12") {
+				twelveTwentyFourButton.innerHTML = "24";
+			} else {
+				twelveTwentyFourButton.innerHTML = "12";
+			}
+		}
+	</script>
+
+</body>
+
+</html>

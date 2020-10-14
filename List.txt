@@ -1,0 +1,46 @@
+Art
+- ID (Image)
+- Name
+- Price
+- Forgery
+- Size
+
+Bugs
+- ID (Image)
+- Name
+- Month
+- Time
+- Price
+- Location
+
+Fish
+- ID (Image)
+- Name
+- Month
+- Time
+- Price
+- Location
+- Size
+
+Fossils
+- ID (Image)
+- Name
+- Price
+- Size
+
+Music
+- ID (Image)
+- Name
+
+Reactions
+- ID (Image
+- Name
+- Learned
+
+Sea Creatures
+- ID (Image)
+- Name
+- Month
+- Time
+- Price
+- Speed
